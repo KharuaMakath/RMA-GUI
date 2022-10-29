@@ -25,7 +25,7 @@ if game.PlaceId == 6708206173 then
     TextLabel.Position = UDim2.new(-0.00308448076, 0, -0.00100979209, 0)
     TextLabel.Size = UDim2.new(0, 250, 0, 57)
     TextLabel.Font = Enum.Font.Nunito
-    TextLabel.Text = "Welcome, UwU"
+    TextLabel.Text = "(Removing password soon)"
     TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
     TextLabel.TextScaled = true
     TextLabel.TextSize = 14.000
@@ -43,7 +43,7 @@ if game.PlaceId == 6708206173 then
     Check.Position = UDim2.new(0.0849505365, 0, 0.315545559, 0)
     Check.Size = UDim2.new(0, 200, 0, 50)
     Check.Font = Enum.Font.Nunito
-    Check.Text = "Insert Password~~"
+    Check.Text = "Password = kharua"
     Check.TextColor3 = Color3.fromRGB(0, 0, 0)
     Check.TextScaled = true
     Check.TextSize = 14.000
@@ -56,16 +56,17 @@ if game.PlaceId == 6708206173 then
     Submit.Position = UDim2.new(0.0835825503, 0, 0.608202577, 0)
     Submit.Size = UDim2.new(0, 200, 0, 50)
     Submit.Font = Enum.Font.Nunito
-    Submit.Text = "UwU"
+    Submit.Text = "Enter"
     Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
     Submit.TextScaled = true
     Submit.TextSize = 14.000
     Submit.TextWrapped = true
     Submit.MouseButton1Click:Connect(function()
-        if Check.Text == "OwO" then
+        if Check.Text == "kharua" then
             KeyLogin.Visible = false
             wait(0.5)
             getgenv().animatedbootha = false;
+            getgenv().animatedboothb = false;
             getgenv().animatedsigna = false;
             getgenv().animatedsignb = false;
             getgenv().animatedsignc = false;
@@ -95,6 +96,49 @@ if game.PlaceId == 6708206173 then
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11387621583}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.15)
+                    end
+                end)
+            end
+
+            function ABB()
+                spawn(function()
+                        while getgenv().animatedboothb == true do
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414050805}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414153498}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414154113}}
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414154970}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414155655}}
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414156266}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414159061}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414161382}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414161971}}
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414162579}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414164978}}
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414165726}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
                     end
                 end)
             end
@@ -297,6 +341,13 @@ if game.PlaceId == 6708206173 then
                 getgenv().animatedbootha = bool
                 if bool then
                     ABA();
+                end
+            end)
+
+            b:Toggle("Gorefield",function(bool)
+                getgenv().animatedboothb = bool
+                if bool then
+                    ABB();
                 end
             end)
         
