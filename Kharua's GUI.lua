@@ -69,31 +69,28 @@ if game.PlaceId == 6708206173 then
             getgenv().animatedboothb = false;
             getgenv().animatedsigna = false;
             getgenv().animatedsignb = false;
-            getgenv().animatedsignc = false;
-            getgenv().animatedsignd = false;
-            getgenv().animatedsigne = false;
             
 
 
             function ABA()
                 spawn(function()
                         while getgenv().animatedbootha == true do
-                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11387621210}} 
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11419829804}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.9)
-                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11387621583}} 
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11419831766}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.15)
-                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11387621884}}
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11419833396}}
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.15)
-                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11387622251}} 
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11419838328}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.15)
-                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11387621884}}
+                            wait(0.2)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11419833396}}
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.15)
-                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11387621583}} 
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11419831766}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.15)
                     end
@@ -217,114 +214,6 @@ if game.PlaceId == 6708206173 then
                 end)
             end
             
-            function ASC()
-                spawn(function()
-                        while getgenv().animatedsignc == true do
-                            local args = {[1] = "Text", [2] = "WARNING!"}
-                            game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                            wait(0.5)
-                            local args = {[1] = "Text", [2] = ""}
-                            game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                            wait(0.5)
-                            local args = {[1] = "Text", [2] = "WARNING!"}
-                            game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                            wait(0.5)
-                            local args = {[1] = "Text", [2] = ""}
-                            game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                            wait(0.5)
-                            local args = {[1] = "Text", [2] = "WARNING!"}
-                            game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                            wait(0.5)
-                            local args = {[1] = "Text", [2] = ""}
-                            game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                            wait(0.5)
-                            local args = {[1] = "Text", [2] = "WARNING!"}
-                            game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                            wait(0.5)
-                            local args = {[1] = "Text", [2] = ""}
-                            game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                            wait(0.5)
-                            local args = {[1] = "Text", [2] = "Your mom is gaxe"}
-                            game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(2.5)
-                    end
-                end)
-            end
-            
-            function ASD()
-                spawn(function()
-                    while getgenv().animatedsignd == true do
-                        local args = {[1] = "Text", [2] = "Loading."}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.5)
-                        local args = {[1] = "Text", [2] = "Loading.."}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.5)
-                        local args = {[1] = "Text", [2] = "Loading..."}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.5)
-                        local args = {[1] = "Text", [2] = "Loading."}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.5)
-                        local args = {[1] = "Text", [2] = "Loading.."}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.5)
-                        local args = {[1] = "Text", [2] = "Loading..."}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.5)
-                        local args = {[1] = "Text", [2] = "Loading."}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.5)
-                        local args = {[1] = "Text", [2] = "Loading.."}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.5)
-                        local args = {[1] = "Text", [2] = "Loading..."}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.5)
-                        local args = {[1] = "Text", [2] = "Loaded!"}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(2)
-                        local args = {[1] = "Text", [2] = "I banxged your mother"}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(5)
-                    end
-                end)
-            end
-            
-            function ASE()
-                spawn(function()
-                    while getgenv().animatedsigne == true do
-                        local args = {[1] = "Decal", [2] = "rbxassetid://9768509887"}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.05)
-                        local args = {[1] = "Decal", [2] = "rbxassetid://9768510640"}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.05)
-                        local args = {[1] = "Decal", [2] = "rbxassetid://9768511308"}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.05)
-                        local args = {[1] = "Decal", [2] = "rbxassetid://9768511784"}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.05)
-                        local args = {[1] = "Decal", [2] = "rbxassetid://9768512178"}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.05)
-                        local args = {[1] = "Decal", [2] = "rbxassetid://9768514418"}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.05)
-                        local args = {[1] = "Decal", [2] = "rbxassetid://9768515150"}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.05)
-                        local args = {[1] = "Decal", [2] = "rbxassetid://9768516476"}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.05)
-                        local args = {[1] = "Decal", [2] = "rbxassetid://9768518142"}
-                        game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-                        wait(0.05)
-                    end
-                end)
-            end
-            
             local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
             
             local w = library:CreateWindow("Rate My Avatar")
@@ -365,27 +254,6 @@ if game.PlaceId == 6708206173 then
                 getgenv().animatedsignb = bool
                 if bool then
                     ASB();
-                end
-            end)
-            
-            g:Toggle("Warning",function(bool)
-                getgenv().animatedsignc = bool
-                if bool then
-                    ASC();
-                end
-            end)
-            
-            g:Toggle("Loading",function(bool)
-                getgenv().animatedsignd = bool
-                if bool then
-                    ASD();
-                end
-            end)
-            
-            g:Toggle("ZeroTwo Dance",function(bool)
-                getgenv().animatedsigne = bool
-                if bool then
-                    ASE();
                 end
             end)
 
