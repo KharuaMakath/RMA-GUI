@@ -266,7 +266,7 @@ if game.PlaceId == 6708206173 then
 
             ---Glitch Effects---
 
-            i:Toggle("Placeholder",function(bool)
+            i:Toggle("Kharua Glitch",function(bool)
                 getgenv().glitch1 = bool
                 if bool then
                     GE1();
