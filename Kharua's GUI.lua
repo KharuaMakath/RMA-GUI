@@ -65,17 +65,17 @@ if game.PlaceId == 6708206173 then
         if Check.Text == "kharua" then
             KeyLogin.Visible = false
             wait(0.5)
-            getgenv().animatedbootha = false;
-            getgenv().animatedboothb = false;
-            getgenv().animatedboothc = false;
+            getgenv().garfbooth1 = false;
+            getgenv().garfbooth2 = false;
+            getgenv().glitch1 = false;
             getgenv().animatedsigna = false;
             getgenv().animatedsignb = false;
             
 
 
-            function ABA()
+            function GB1()
                 spawn(function()
-                        while getgenv().animatedbootha == true do
+                        while getgenv().garfbooth1 == true do
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432394784}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(1.2)
@@ -98,9 +98,9 @@ if game.PlaceId == 6708206173 then
                 end)
             end
 
-            function ABB()
+            function GB2()
                 spawn(function()
-                        while getgenv().animatedboothb == true do
+                        while getgenv().garfbooth2 == true do
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414050805}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.1)
@@ -141,9 +141,9 @@ if game.PlaceId == 6708206173 then
                 end)
             end
 
-            function ABC()
+            function GE1()
                 spawn(function()
-                        while getgenv().animatedboothc == true do
+                        while getgenv().glitch1 == true do
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432820827}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(1)
@@ -240,6 +240,7 @@ if game.PlaceId == 6708206173 then
             
             local g = w:CreateFolder("Garfield Booths")
             local b = w:CreateFolder("Animated Booths")
+            local f = w:CreateFolder("Glitch Effects")
             local h = w:CreateFolder("Animated Signs")
             local d = w:CreateFolder("Decals")
             local c = w:CreateFolder("Extra")
@@ -248,27 +249,29 @@ if game.PlaceId == 6708206173 then
             ---Garfield Booths---
 
             g:Toggle("Garfield",function(bool)
-                getgenv().animatedbootha = bool
+                getgenv().garfbooth1 = bool
                 if bool then
-                    ABA();
+                    GB1();
                 end
             end)
 
             g:Toggle("Gorefield",function(bool)
-                getgenv().animatedboothb = bool
+                getgenv().garfbooth2 = bool
                 if bool then
-                    ABB();
+                    GB2();
                 end
             end)
 
-            ---Booths---
+            ---Booths---      
+
+            ---Glitch Effects---
 
             b:Toggle("Placeholder",function(bool)
-                getgenv().animatedboothc = bool
+                getgenv().glitch1 = bool
                 if bool then
-                    ABC();
+                    GE1();
                 end
-            end)       
+            end) 
 
             ---Signs---
             
