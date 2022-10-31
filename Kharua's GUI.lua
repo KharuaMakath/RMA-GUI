@@ -240,7 +240,7 @@ if game.PlaceId == 6708206173 then
             
             local g = w:CreateFolder("Garfield Booths")
             local b = w:CreateFolder("Animated Booths")
-            local f = w:CreateFolder("Glitch Effects")
+            local i = w:CreateFolder("Glitch Effects")
             local h = w:CreateFolder("Animated Signs")
             local d = w:CreateFolder("Decals")
             local c = w:CreateFolder("Extra")
@@ -266,7 +266,7 @@ if game.PlaceId == 6708206173 then
 
             ---Glitch Effects---
 
-            f:Toggle("Placeholder",function(bool)
+            i:Toggle("Placeholder",function(bool)
                 getgenv().glitch1 = bool
                 if bool then
                     GE1();
