@@ -266,7 +266,7 @@ if game.PlaceId == 6708206173 then
 
             ---Glitch Effects---
 
-            b:Toggle("Placeholder",function(bool)
+            f:Toggle("Placeholder",function(bool)
                 getgenv().glitch1 = bool
                 if bool then
                     GE1();
