@@ -144,16 +144,16 @@ if game.PlaceId == 6708206173 then
             function ABC()
                 spawn(function()
                         while getgenv().animatedboothc == true do
-                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432820827}} 
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = "Placeholder", ["ImageId"] = 11432820827}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(1)
-                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432822490}} 
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = "Placeholder", ["ImageId"] = 11432822490}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.1)
-                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432824011}} 
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = "Placeholder", ["ImageId"] = 11432824011}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.1)
-                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432825457}} 
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = "Placeholder", ["ImageId"] = 11432825457}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.1)
                     end
@@ -263,7 +263,7 @@ if game.PlaceId == 6708206173 then
 
             ---Booths---
 
-            g:Toggle("Placeholder",function(bool)
+            b:Toggle("Placeholder",function(bool)
                 getgenv().animatedboothc = bool
                 if bool then
                     ABC();
