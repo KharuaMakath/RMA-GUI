@@ -1,3 +1,70 @@
+if game.PlaceId == 6708206173 then
+    local ScreenGui = Instance.new("ScreenGui")
+    local KeyLogin = Instance.new("Frame")
+    local UICorner = Instance.new("UICorner")
+    local TextLabel = Instance.new("TextLabel")
+    local UICorner_2 = Instance.new("UICorner")
+    local UIGradient = Instance.new("UIGradient")
+    local Check = Instance.new("TextBox")
+    local Submit = Instance.new("TextButton")
+    local UICorner_3 = Instance.new("UICorner")
+    
+    ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    
+    KeyLogin.Name = "KeyLogin"
+    KeyLogin.Parent = ScreenGui
+    KeyLogin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    KeyLogin.Position = UDim2.new(0, 0, 0, 0)
+    KeyLogin.Size = UDim2.new(0, 263, 0, 246)
+    
+    UICorner.Parent = KeyLogin
+    
+    TextLabel.Parent = KeyLogin
+    TextLabel.BackgroundColor3 = Color3.fromRGB(71, 71, 255)
+    TextLabel.BackgroundTransparency = 1.000
+    TextLabel.Position = UDim2.new(-0.00308448076, 0, -0.00100979209, 0)
+    TextLabel.Size = UDim2.new(0, 250, 0, 57)
+    TextLabel.Font = Enum.Font.Nunito
+    TextLabel.Text = "(Removing password soon)"
+    TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+    TextLabel.TextScaled = true
+    TextLabel.TextSize = 14.000
+    TextLabel.TextWrapped = true
+    
+    UICorner_2.Parent = TextLabel
+    
+    UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 241, 255)), ColorSequenceKeypoint.new(0.47, Color3.fromRGB(117, 176, 255)), ColorSequenceKeypoint.new(0.86, Color3.fromRGB(12, 49, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 34, 255))}
+    UIGradient.Parent = KeyLogin
+    
+    Check.Name = "Check"
+    Check.Parent = KeyLogin
+    Check.BackgroundColor3 = Color3.fromRGB(148, 223, 255)
+    Check.BackgroundTransparency = 0.500
+    Check.Position = UDim2.new(0.0849505365, 0, 0.315545559, 0)
+    Check.Size = UDim2.new(0, 200, 0, 50)
+    Check.Font = Enum.Font.Nunito
+    Check.Text = "Password = kharua"
+    Check.TextColor3 = Color3.fromRGB(0, 0, 0)
+    Check.TextScaled = true
+    Check.TextSize = 14.000
+    Check.TextWrapped = true
+    
+    Submit.Name = "Submit"
+    Submit.Parent = KeyLogin
+    Submit.BackgroundColor3 = Color3.fromRGB(148, 223, 255)
+    Submit.BackgroundTransparency = 0.500
+    Submit.Position = UDim2.new(0.0835825503, 0, 0.608202577, 0)
+    Submit.Size = UDim2.new(0, 200, 0, 50)
+    Submit.Font = Enum.Font.Nunito
+    Submit.Text = "Enter"
+    Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
+    Submit.TextScaled = true
+    Submit.TextSize = 14.000
+    Submit.TextWrapped = true
+    Submit.MouseButton1Click:Connect(function()
+        if Check.Text == "kharua" then
+            KeyLogin.Visible = false
+            wait(0.5)
             getgenv().animatedbootha = false;
             getgenv().animatedboothb = false;
             getgenv().animatedboothc = false;
