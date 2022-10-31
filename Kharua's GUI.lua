@@ -77,8 +77,7 @@ if game.PlaceId == 6708206173 then
                         while getgenv().animatedbootha == true do
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432394784}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            math.randomseed(tick())
-                            wait(math.random(1,3))
+                            wait(1.2)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432395534}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.2)
