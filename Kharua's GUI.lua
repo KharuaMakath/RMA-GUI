@@ -67,6 +67,7 @@ if game.PlaceId == 6708206173 then
             wait(0.5)
             getgenv().animatedbootha = false;
             getgenv().animatedboothb = false;
+            getgenv().animatedboothc = false;
             getgenv().animatedsigna = false;
             getgenv().animatedsignb = false;
             
@@ -134,6 +135,25 @@ if game.PlaceId == 6708206173 then
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.1)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11414165726}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                    end
+                end)
+            end
+
+            function ABC()
+                spawn(function()
+                        while getgenv().animatedboothc == true do
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432820827}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432822490}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432824011}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432825457}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.1)
                     end
@@ -218,39 +238,48 @@ if game.PlaceId == 6708206173 then
             
             local w = library:CreateWindow("Rate My Avatar")
             
+            local g = w:CreateFolder("Garfield Booths")
             local b = w:CreateFolder("Animated Booths")
-            local g = w:CreateFolder("Animated Signs")
+            local h = w:CreateFolder("Animated Signs")
             local d = w:CreateFolder("Decals")
             local c = w:CreateFolder("Extra")
             local e = w:CreateFolder("Close GUI")
             
-            ---Booths---
+            ---Garfield Booths---
 
-            b:Toggle("Garfield",function(bool)
+            g:Toggle("Garfield",function(bool)
                 getgenv().animatedbootha = bool
                 if bool then
                     ABA();
                 end
             end)
 
-            b:Toggle("Gorefield",function(bool)
+            g:Toggle("Gorefield",function(bool)
                 getgenv().animatedboothb = bool
                 if bool then
                     ABB();
                 end
             end)
-        
+
+            ---Booths---
+
+            g:Toggle("Placeholder",function(bool)
+                getgenv().animatedboothc = bool
+                if bool then
+                    ABC();
+                end
+            end)       
 
             ---Signs---
             
-            g:Toggle("Bypassed Decals",function(bool)
+            h:Toggle("Bypassed Decals",function(bool)
                 getgenv().animatedsigna = bool
                 if bool then
                     ASA();
                 end
             end)
             
-            g:Toggle("Feet Pics",function(bool)
+            h:Toggle("Feet Pics",function(bool)
                 getgenv().animatedsignb = bool
                 if bool then
                     ASB();
