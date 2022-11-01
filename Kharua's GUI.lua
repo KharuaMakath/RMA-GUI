@@ -311,7 +311,7 @@ if game.PlaceId == 6708206173 then
 
             ---Stable Booths---
 
-            g:Toggle("Kharua",function(bool)
+            t:Toggle("Kharua",function(bool)
                 getgenv().kharua = bool
                 if bool then
                     SB1();
