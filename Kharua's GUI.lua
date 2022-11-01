@@ -152,10 +152,25 @@ if game.PlaceId == 6708206173 then
                             wait(0.1)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432824011}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.1)
+                            wait(0.3)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432825457}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(1.6)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11436601502}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11436600749}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.8)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11436602772}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11441589201}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11441587938}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.2)
                     end
                 end)
             end
@@ -241,6 +256,7 @@ if game.PlaceId == 6708206173 then
             local g = w:CreateFolder("Garfield Booths")
             local b = w:CreateFolder("Animated Booths")
             local i = w:CreateFolder("Glitch Effects")
+            local t = w:CreateFolder("Test Section (ignore)")
             local h = w:CreateFolder("Animated Signs")
             local d = w:CreateFolder("Decals")
             local c = w:CreateFolder("Extra")
