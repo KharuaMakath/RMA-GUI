@@ -79,22 +79,22 @@ if game.PlaceId == 6708206173 then
                         while getgenv().garfbooth1 == true do
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432394784}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(1.2)
+                            wait(0.7)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432395534}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.2)
+                            wait(0.1)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432396348}}
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.2)
+                            wait(0.1)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432397465}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.2)
+                            wait(0.1)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432396348}}
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.2)
+                            wait(0.1)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432395534}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.2)
+                            wait(0.1)
                     end
                 end)
             end
