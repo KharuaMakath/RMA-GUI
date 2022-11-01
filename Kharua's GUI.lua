@@ -68,6 +68,7 @@ if game.PlaceId == 6708206173 then
             getgenv().garfbooth1 = false;
             getgenv().garfbooth2 = false;
             getgenv().glitch1 = false;
+            getgenv().kharua = false;
             getgenv().animatedsigna = false;
             getgenv().animatedsignb = false;
             
@@ -152,7 +153,7 @@ if game.PlaceId == 6708206173 then
                             wait(0.1)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432824011}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.3)
+                            wait(0.2)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432825457}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(1.6)
@@ -170,7 +171,26 @@ if game.PlaceId == 6708206173 then
                             wait(0.1)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11441587938}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.2)
+                            wait(0.3)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11441591113}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11441609693}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432825457}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                    end
+                end)
+            end
+
+            function SB1()
+                spawn(function()
+                        while getgenv().kharua == true do
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432820827}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
                     end
                 end)
             end
@@ -256,7 +276,7 @@ if game.PlaceId == 6708206173 then
             local g = w:CreateFolder("Garfield Booths")
             local b = w:CreateFolder("Animated Booths")
             local i = w:CreateFolder("Glitch Effects")
-            local t = w:CreateFolder("Test Section (ignore)")
+            local t = w:CreateFolder("Stable Backgrounds")
             local h = w:CreateFolder("Animated Signs")
             local d = w:CreateFolder("Decals")
             local c = w:CreateFolder("Extra")
@@ -288,6 +308,15 @@ if game.PlaceId == 6708206173 then
                     GE1();
                 end
             end) 
+
+            ---Stable Booths---
+
+            g:Toggle("Kharua",function(bool)
+                getgenv().kharua = bool
+                if bool then
+                    SB1();
+                end
+            end)
 
             ---Signs---
             
