@@ -1,7 +1,3 @@
----to do---
----custom input script---
-
-
 if game.PlaceId == 6708206173 then
     local ScreenGui = Instance.new("ScreenGui")
     local KeyLogin = Instance.new("Frame")
