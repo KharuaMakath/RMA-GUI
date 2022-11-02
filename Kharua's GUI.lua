@@ -1,3 +1,7 @@
+---to do---
+---custom input script---
+
+
 if game.PlaceId == 6708206173 then
     local ScreenGui = Instance.new("ScreenGui")
     local KeyLogin = Instance.new("Frame")
@@ -43,7 +47,7 @@ if game.PlaceId == 6708206173 then
     Check.Position = UDim2.new(0.0849505365, 0, 0.315545559, 0)
     Check.Size = UDim2.new(0, 200, 0, 50)
     Check.Font = Enum.Font.Nunito
-    Check.Text = "Password = kharua"
+    Check.Text = "Password = h"
     Check.TextColor3 = Color3.fromRGB(0, 0, 0)
     Check.TextScaled = true
     Check.TextSize = 14.000
@@ -62,7 +66,9 @@ if game.PlaceId == 6708206173 then
     Submit.TextSize = 14.000
     Submit.TextWrapped = true
     Submit.MouseButton1Click:Connect(function()
-        if Check.Text == "kharua" then
+
+        KeyLogin.Visible = false
+        if Check.Text == "h" then
             KeyLogin.Visible = false
             wait(0.5)
             getgenv().garfbooth1 = false;
@@ -70,6 +76,7 @@ if game.PlaceId == 6708206173 then
             getgenv().saul = false;
             getgenv().glitch1 = false;
             getgenv().kharua = false;
+            getgenv().custom = false;
             getgenv().animatedsigna = false;
             getgenv().animatedsignb = false;
             
@@ -318,7 +325,17 @@ if game.PlaceId == 6708206173 then
                         while getgenv().kharua == true do
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432820827}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.2)
+                            wait(0.1)
+                    end
+                end)
+            end
+
+            function SBC()
+                spawn(function()
+                        while getgenv().custom == true do
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432820827}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
                     end
                 end)
             end
@@ -450,6 +467,13 @@ if game.PlaceId == 6708206173 then
                 getgenv().kharua = bool
                 if bool then
                     SB1();
+                end
+            end)
+
+            t:Toggle("Custom",function(bool)
+                getgenv().custom = bool
+                if bool then
+                    SBC();
                 end
             end)
 
