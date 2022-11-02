@@ -69,7 +69,7 @@ if game.PlaceId == 6708206173 then
             getgenv().garfbooth1 = false;
             getgenv().garfbooth2 = false;
             getgenv().saul = false;
-            getgenv().wheelchair = false;
+            getgenv().cat = false;
             getgenv().glitch1 = false;
             getgenv().kharua = false;
             getgenv().custom = false;
@@ -273,9 +273,9 @@ if game.PlaceId == 6708206173 then
                 end)
             end
 
-            function AB2()
+            function ABCW()
                 spawn(function()
-                        while getgenv().wheelchair == true do
+                        while getgenv().cat == true do
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453162403}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.1)
@@ -518,9 +518,9 @@ if game.PlaceId == 6708206173 then
             end)
 
             b:Toggle("Wheelchair",function(bool)
-                getgenv().wheelchair = bool
+                getgenv().cat = bool
                 if bool then
-                    AB2();
+                    ABCW();
                 end
             end)
 
