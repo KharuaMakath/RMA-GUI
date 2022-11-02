@@ -69,6 +69,7 @@ if game.PlaceId == 6708206173 then
             getgenv().garfbooth1 = false;
             getgenv().garfbooth2 = false;
             getgenv().saul = false;
+            getgenv().wheelchair = false;
             getgenv().glitch1 = false;
             getgenv().kharua = false;
             getgenv().custom = false;
@@ -272,6 +273,75 @@ if game.PlaceId == 6708206173 then
                 end)
             end
 
+            function AB2()
+                spawn(function()
+                        while getgenv().wheelchair == true do
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453162403}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453163006}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453163707}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453164376}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453176591}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453177038}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453177565}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453178205}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453178596}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453182527}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453183157}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453183958}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453184504}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453184986}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453185843}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453187590}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453189452}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453189945}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1) 
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453193630}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453195335}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453195923}} 
+                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                            wait(0.1)
+                            
+
+
             function GE1()
                 spawn(function()
                         while getgenv().glitch1 == true do
@@ -444,6 +514,13 @@ if game.PlaceId == 6708206173 then
                 getgenv().saul = bool
                 if bool then
                     AB1();
+                end
+            end)
+
+            b:Toggle("Wheelchair",function(bool)
+                getgenv().wheelchair = bool
+                if bool then
+                    AB2();
                 end
             end)
 
