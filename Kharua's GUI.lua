@@ -67,7 +67,6 @@ if game.PlaceId == 6708206173 then
     Submit.TextWrapped = true
     Submit.MouseButton1Click:Connect(function()
 
-        KeyLogin.Visible = false
         if Check.Text == "h" then
             KeyLogin.Visible = false
             wait(0.5)
