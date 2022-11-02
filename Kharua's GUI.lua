@@ -528,12 +528,7 @@ if game.PlaceId == 6708206173 then
                 local args = {[1] = "Decal", [2] = "rbxassetid://6565230215"}
                 game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
             end)
-            
-            d:Button("Gangbang",function()
-                local args = {[1] = "Decal", [2] = "rbxassetid://9409975514"}
-                game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-            end)
-            
+                    
             d:Button("Unnamed",function()
                 local args = {[1] = "Decal", [2] = "rbxassetid://9414623558"}
                 game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
