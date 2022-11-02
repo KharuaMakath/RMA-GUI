@@ -276,7 +276,7 @@ if game.PlaceId == 6708206173 then
             local g = w:CreateFolder("Garfield Booths")
             local b = w:CreateFolder("Animated Booths")
             local i = w:CreateFolder("Glitch Effects")
-            local t = w:CreateFolder("Stable Backgrounds")
+            local t = w:CreateFolder("Static Booths")
             local h = w:CreateFolder("Animated Signs")
             local d = w:CreateFolder("Decals")
             local c = w:CreateFolder("Extra")
@@ -309,7 +309,7 @@ if game.PlaceId == 6708206173 then
                 end
             end) 
 
-            ---Stable Booths---
+            ---Static Booths---
 
             t:Toggle("Kharua",function(bool)
                 getgenv().kharua = bool
