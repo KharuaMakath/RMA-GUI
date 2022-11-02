@@ -332,7 +332,7 @@ if game.PlaceId == 6708206173 then
             function SBC()
                 spawn(function()
                         while getgenv().custom == true do
-                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11432820827}} 
+                            local args = {[1] = "Update", [2] = {["DescriptionText"] = "5u5ryj", ["ImageId"] = 08hj2r3g9797g}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.1)
                     end
