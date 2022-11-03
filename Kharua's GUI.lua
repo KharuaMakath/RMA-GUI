@@ -276,10 +276,6 @@ if game.PlaceId == 6708206173 then
             function AB2()
                 spawn(function()
                         while getgenv().cat == true do
-
-            function ABCW()
-                spawn(function()
-                        while getgenv().cat == true do
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453162403}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.1)
@@ -343,6 +339,9 @@ if game.PlaceId == 6708206173 then
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453195923}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.1)
+                        end
+                    end)
+                end
                             
 
 
