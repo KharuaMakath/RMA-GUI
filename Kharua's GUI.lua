@@ -273,6 +273,10 @@ if game.PlaceId == 6708206173 then
                 end)
             end
 
+            function AB2()
+                spawn(function()
+                        while getgenv().cat == true do
+
             function ABCW()
                 spawn(function()
                         while getgenv().cat == true do
@@ -517,6 +521,13 @@ if game.PlaceId == 6708206173 then
                 end
             end)
 
+            b:Toggle("Cat",function(bool)
+                getgenv().cat = bool
+                if bool then
+                    AB2();
+                end
+            end)
+
             b:Toggle("Wheelchair",function(bool)
                 getgenv().cat = bool
                 if bool then
@@ -608,26 +619,6 @@ if game.PlaceId == 6708206173 then
                     
             d:Button("Unnamed",function()
                 local args = {[1] = "Decal", [2] = "rbxassetid://9414623558"}
-                game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-            end)
-            
-            d:Button("Kirby",function()
-                local args = {[1] = "Decal", [2] = "rbxassetid://9886900633"}
-                game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-            end)
-            
-            d:Button("Chicken",function()
-                local args = {[1] = "Decal", [2] = "rbxassetid://9706807307"}
-                game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-            end)
-            
-            d:Button("Birb",function()
-                local args = {[1] = "Decal", [2] = "rbxassetid://1447264774"}
-                game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
-            end)
-            
-            d:Button("Angry Birbs Drip",function()
-                local args = {[1] = "Decal", [2] = "rbxassetid://9692212133"}
                 game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
             end)
             
