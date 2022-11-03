@@ -291,9 +291,6 @@ if game.PlaceId == 6708206173 then
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453176591}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.1)
-                            local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453177038}} 
-                            game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.1)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453177565}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
                             wait(0.1)
