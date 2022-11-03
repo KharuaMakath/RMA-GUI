@@ -338,7 +338,7 @@ if game.PlaceId == 6708206173 then
                             wait(0.1)
                             local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11453195923}} 
                             game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
-                            wait(0.1)
+                            wait(0.7)
                         end
                     end)
                 end
@@ -524,13 +524,6 @@ if game.PlaceId == 6708206173 then
                 getgenv().cat = bool
                 if bool then
                     AB2();
-                end
-            end)
-
-            b:Toggle("Wheelchair",function(bool)
-                getgenv().cat = bool
-                if bool then
-                    ABCW();
                 end
             end)
 
