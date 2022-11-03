@@ -611,6 +611,26 @@ if game.PlaceId == 6708206173 then
                 game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
             end)
             
+            d:Button("Kirby",function()
+                local args = {[1] = "Decal", [2] = "rbxassetid://9886900633"}
+                game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
+            end)
+            
+            d:Button("Chicken",function()
+                local args = {[1] = "Decal", [2] = "rbxassetid://9706807307"}
+                game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
+            end)
+            
+            d:Button("Birb",function()
+                local args = {[1] = "Decal", [2] = "rbxassetid://1447264774"}
+                game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
+            end)
+            
+            d:Button("Angry Birbs Drip",function()
+                local args = {[1] = "Decal", [2] = "rbxassetid://9692212133"}
+                game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
+            end)
+            
             d:Button("F1",function()
                 local args = {[1] = "Decal", [2] = "rbxassetid://9546128974"}
                 game:GetService("ReplicatedStorage").UpdateSign:FireServer(unpack(args))
