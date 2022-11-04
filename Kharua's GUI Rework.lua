@@ -1,0 +1,11 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Kharua's GUI", "GrapeTheme")
+local Tab = Window:NewTab("Animated Booths")
+local Tab = Window:NewTab("Garfield Booths")
+local Section = Tab:NewSection("Garfield")
+local Tab = Window:NewTab("Glitch Effects")
+local Tab = Window:NewTab("Static Booths")
+local Tab = Window:NewTab("Animated Signs")
+local Tab = Window:NewTab("Decals")
+local Tab = Window:NewTab("Extra")
+
