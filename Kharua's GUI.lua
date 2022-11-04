@@ -70,6 +70,7 @@ if game.PlaceId == 6708206173 then
             getgenv().garfbooth2 = false;
             getgenv().saul = false;
             getgenv().cat = false;
+            getgenv().nekoarc = false;
             getgenv().glitch1 = false;
             getgenv().kharua = false;
             getgenv().custom = false;
@@ -339,6 +340,199 @@ if game.PlaceId == 6708206173 then
                         end
                     end)
                 end
+
+                function AB3()
+                    spawn(function()
+                            while getgenv().nekoarc == true do
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460270525}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460273169}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460273746}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460276073}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460276469}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460277685}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460278351}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460279178}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460294268}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460294884}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460295580}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460295928}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460339987}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460340650}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460341474}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460344590}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460345308}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460345840}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460347662}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460345840}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460347662}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460345840}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460347662}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460348584}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460349228}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460350446}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460351024}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460367375}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.3)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460373946}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460374614}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460375203}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460378059}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460378878}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.3)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460379765}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460380429}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460382056}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460384177}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460384644}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460386207}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460388694}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460386207}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460388694}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460386207}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460388694}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460386207}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460388694}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460386207}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460388694}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460386207}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460388694}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460386207}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460388694}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460386207}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460388694}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460386207}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460388694}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460386207}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460388694}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460386207}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460388694}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460386207}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                                local args = {[1] = "Update", [2] = {["DescriptionText"] = ".", ["ImageId"] = 11460388694}} 
+                                game:GetService("ReplicatedStorage").CustomiseBooth:FireServer(unpack(args))
+                                wait(0.1)
+                            end
+                        end)
+                    end
                             
 
 
@@ -521,6 +715,13 @@ if game.PlaceId == 6708206173 then
                 getgenv().cat = bool
                 if bool then
                     AB2();
+                end
+            end)
+
+            b:Toggle("Neko Arc",function(bool)
+                getgenv().nekoarc = bool
+                if bool then
+                    AB3();
                 end
             end)
 
