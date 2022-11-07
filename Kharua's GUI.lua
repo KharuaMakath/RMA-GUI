@@ -528,14 +528,14 @@ if game.PlaceId == 6708206173 then
 
             game:GetService("StarterGui"):SetCore("SendNotification", { 
                 Title = "Script Loaded";
-                Text = "Made by vex#0213, Modified by Kharua#7550";
-                Icon = "http://www.roblox.com/asset/?id=11149662650"})
+                Text = "Made by vex#0213, Modified by Garfield";
+                Icon = "http://www.roblox.com/asset/?id=11495267235"})
             Duration = 16;
             wait()
 
             e:DestroyGui()
             elseif
-            game.Players.LocalPlayer:Kick("Wrong key lmfao") then
+            game.Players.LocalPlayer:Kick("[Insert SpongeBob Boo-Womp sound effect]") then
         end
     end)
     
